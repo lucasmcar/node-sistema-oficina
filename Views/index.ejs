@@ -1,0 +1,23 @@
+<%- include('./partials/header') %>
+<div class="login-reg-panel">
+      
+    <div class="register-info-box">
+        <h2>Não tem uma conta?</h2>
+        <p>Por que não se registrar?</p>
+        <a href="/users/create" class="btn btn-default-outline" name="active-log-panel" id="label-login">Registre-se</a>
+    </div>
+                        
+    <div class="white-panel">
+        <div class="login-show">
+            <h2>LOGIN</h2>
+            <form action="/login" method="post">
+                <input type="text" placeholder="Nome de usuário" name="user_name">
+                <input type="password" placeholder="**********" name="user_pass">
+                <input type="submit" value="Login">
+                <a href="/forgot">Esqueceu a senha?</a>
+            </form>
+            
+        </div>
+    </div>
+</div>
+
